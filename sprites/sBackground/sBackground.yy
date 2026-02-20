@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3dd2f709-0802-49e6-9041-0628d264a828","blendMode":0,"displayName":"default","isLocked":false,"name":"3dd2f709-0802-49e6-9041-0628d264a828","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a60c4b7a-1bbc-4358-b55d-cf40a50d4fda","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"a60c4b7a-1bbc-4358-b55d-cf40a50d4fda","opacity":40.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"9c1667a7-f4eb-4a44-add6-0896f66c864f","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"9c1667a7-f4eb-4a44-add6-0896f66c864f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sBackground",
