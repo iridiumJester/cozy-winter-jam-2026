@@ -25,7 +25,11 @@ if needed_blocks != existing_blocks
 					irandom_range(0, room_height*0.3),
 					irandom_range(room_height*0.1, room_height*0.35)
 				);
-				instance_create_layer(xx, yy, "Instances", oBlock);
+				var inst = instance_create_layer(xx, yy, "Instances", oBlock);
+				with (inst)
+				{
+					image_index = i;
+				}
 				existing_blocks[i] += 1;
 		}
 	}
