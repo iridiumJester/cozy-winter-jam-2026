@@ -1,6 +1,6 @@
 vsp = vsp + grv;
 
-// Vertical collision
+// vertical collision
 if (place_meeting(x,y+vsp,collision))
 {
 

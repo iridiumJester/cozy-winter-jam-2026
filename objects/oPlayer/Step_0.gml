@@ -1,6 +1,7 @@
 // keyboard inputs
 var _move = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _jump = keyboard_check_pressed(vk_space);
+var _grab = keyboard_check(ord("E"))
 
 hsp = _move * move_speed;
 
@@ -13,7 +14,7 @@ vsp = -jump_speed;
 
 }
 
-// Horizontal collision
+// horizontal collision
 if (place_meeting(x+hsp,y,collision))
 {
 
@@ -25,7 +26,7 @@ if (place_meeting(x+hsp,y,collision))
 }
 x = x + hsp;
 
-// Vertical collision
+// vertical collision
 if (place_meeting(x,y+vsp,collision))
 {
 
@@ -44,3 +45,14 @@ if (_move != 0)
     else if (_move > 0) image_xscale = -1;
 }
 
+// grab block
+if (place_meeting(x,y,oBlock)) && _grab
+{ carrying = true; }
+
+if (carrying){
+	oBlock.x=x + 20;
+	oBlock.y=y - 20;
+}
+
+if (carrying) && _grab 
+{ carrying = false; }
