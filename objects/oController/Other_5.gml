@@ -1,0 +1,1 @@
+if instance_exists(oBlock) instance_destroy()

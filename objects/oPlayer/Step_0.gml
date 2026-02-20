@@ -2,24 +2,40 @@
 var _move = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _jump = keyboard_check_pressed(vk_space);
 
-// left/right movement
-move_and_collide(_move * move_speed, _jump * jump_speed, collision, undefined, undefined, undefined, move_speed, move_speed);
+hsp = _move * move_speed;
 
-// jump
+vsp = vsp + grv;
+
 if (place_meeting(x,y+1,collision)) && (_jump)
 {
 
-vspeed = -jump_speed
+vsp = -jump_speed;
 
 }
-else if (place_meeting(x,y+1,collision))
+
+// Horizontal collision
+if (place_meeting(x+hsp,y,collision))
 {
-	vspeed = 0;
+
+	while (!place_meeting(x+sign(hsp),y,collision))
+	{
+		x = x + sign(hsp);
+	}
+	hsp = 0;
 }
-else 
+x = x + hsp;
+
+// Vertical collision
+if (place_meeting(x,y+vsp,collision))
 {
-	vspeed = grav;
+
+	while (!place_meeting(x,y+sign(vsp),collision))
+	{
+		y = y + sign(vsp);
+	}
+	vsp = 0;
 }
+y = y + vsp;
 
 // flip sprite
 if (_move != 0)
