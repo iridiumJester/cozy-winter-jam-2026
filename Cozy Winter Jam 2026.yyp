@@ -43,7 +43,7 @@
     {"id":{"name":"sBlockCol","path":"sprites/sBlockCol/sBlockCol.yy",},},
     {"id":{"name":"sGroundTiles","path":"sprites/sGroundTiles/sGroundTiles.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
-    {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
+    {"id":{"name":"tsCollision","path":"tilesets/tsCollision/tsCollision.yy",},},
     {"id":{"name":"tsGround","path":"tilesets/tsGround/tsGround.yy",},},
   ],
   "resourceType":"GMProject",
