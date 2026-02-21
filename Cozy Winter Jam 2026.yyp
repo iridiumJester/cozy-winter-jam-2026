@@ -45,6 +45,7 @@
     {"id":{"name":"sBlockCol","path":"sprites/sBlockCol/sBlockCol.yy",},},
     {"id":{"name":"sGroundTiles","path":"sprites/sGroundTiles/sGroundTiles.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"sPlayerHolding","path":"sprites/sPlayerHolding/sPlayerHolding.yy",},},
     {"id":{"name":"sReflection1","path":"sprites/sReflection1/sReflection1.yy",},},
     {"id":{"name":"tsCollision","path":"tilesets/tsCollision/tsCollision.yy",},},
     {"id":{"name":"tsGround","path":"tilesets/tsGround/tsGround.yy",},},
