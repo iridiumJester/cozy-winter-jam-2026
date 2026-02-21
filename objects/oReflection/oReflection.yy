@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oBlock",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oReflection",
+  "eventList":[],
   "managed":true,
-  "name":"oBlock",
+  "name":"oReflection",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBlock",
-    "path":"sprites/sBlock/sBlock.yy",
+    "name":"sReflection1",
+    "path":"sprites/sReflection1/sReflection1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -10,4 +10,14 @@ if (place_meeting(x,y+vsp,collision))
 	}
 	vsp = 0;
 }
+
+if (place_meeting(x,y+vsp,oBlock))
+{
+
+	while (!place_meeting(x,y+sign(vsp),oBlock))
+	{
+		y = y + sign(vsp);
+	}
+	vsp = 0;
+}
 y = y + vsp;

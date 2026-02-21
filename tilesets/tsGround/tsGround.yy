@@ -9,8 +9,8 @@
   },
   "name":"tsGround",
   "out_columns":2,
-  "out_tilehborder":2,
-  "out_tilevborder":2,
+  "out_tilehborder":0,
+  "out_tilevborder":0,
   "parent":{
     "name":"Tile Sets",
     "path":"folders/Tile Sets.yy",
@@ -34,5 +34,5 @@
   "tileWidth":32,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":4,
+  "tile_count":6,
 }

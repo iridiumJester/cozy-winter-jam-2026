@@ -1,8 +1,7 @@
 // block colors
 if level == 0
 {
-	needed_blocks[0] = 3;
-	needed_blocks[1] = 2;
+	needed_blocks = [3,2,0,0,0];
 }
 if level == 1
 {

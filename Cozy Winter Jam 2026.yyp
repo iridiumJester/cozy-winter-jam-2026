@@ -1,8 +1,8 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Cozy Winter Jam 2026",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -26,23 +26,26 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Cozy Winter Jam 2026",
   "resources":[
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},},
     {"id":{"name":"oController","path":"objects/oController/oController.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"oReflection","path":"objects/oReflection/oReflection.yy",},},
     {"id":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sBlock","path":"sprites/sBlock/sBlock.yy",},},
     {"id":{"name":"sBlockCol","path":"sprites/sBlockCol/sBlockCol.yy",},},
     {"id":{"name":"sGroundTiles","path":"sprites/sGroundTiles/sGroundTiles.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"sReflection1","path":"sprites/sReflection1/sReflection1.yy",},},
     {"id":{"name":"tsCollision","path":"tilesets/tsCollision/tsCollision.yy",},},
     {"id":{"name":"tsGround","path":"tilesets/tsGround/tsGround.yy",},},
   ],
