@@ -10,4 +10,3 @@ if (y < _half_height) {
 if (y > (room_height) - _half_height) {
     y = room_height - _half_height;
 }
-

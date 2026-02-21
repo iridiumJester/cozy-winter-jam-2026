@@ -1,5 +1,5 @@
 move_speed = 8;
-jump_speed = 12;
+jump_speed = 16;
 grv = 1;
 hsp = 0;
 vsp = 0;
