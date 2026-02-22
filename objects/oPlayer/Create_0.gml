@@ -5,5 +5,6 @@ hsp = 0;
 vsp = 0;
 carrying = false;
 can_hold = true;
+correct_position = false;
 
 collision = layer_tilemap_get_id("Tiles_Col");

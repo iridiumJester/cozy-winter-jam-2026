@@ -4,5 +4,6 @@ needed_blocks = [0,0,0,0,0];
 camera_speed = 12;
 win_met = false;
 total_len = 0;
+correct_blocks = false;
 
 draw_set_font(fntText);

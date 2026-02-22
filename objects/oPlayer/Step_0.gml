@@ -3,11 +3,15 @@ var _move = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _jump = keyboard_check_pressed(vk_space);
 var _playing = audio_is_playing(sfxStep);
 
+if oController.correct_blocks && correct_position { image_blend = c_lime; }
+else { image_blend = -1; }
+
 hsp = _move * move_speed;
 
 vsp = vsp + grv;
 
-if (place_meeting(x,y+1,collision)) && (_jump)
+// jump
+if place_meeting(x,y+1,collision) && _jump
 {
 
 vsp = -jump_speed;
@@ -15,7 +19,7 @@ vsp = -jump_speed;
 }
 
 // horizontal collision
-if (place_meeting(x+hsp,y,collision))
+if place_meeting(x+hsp,y,collision)
 {
 
 	while (!place_meeting(x+sign(hsp),y,collision))
@@ -27,7 +31,7 @@ if (place_meeting(x+hsp,y,collision))
 x = x + hsp;
 
 // vertical collision
-if (place_meeting(x,y+vsp,collision))
+if place_meeting(x,y+vsp,collision)
 {
 
 	while (!place_meeting(x,y+sign(vsp),collision))
@@ -37,6 +41,16 @@ if (place_meeting(x,y+vsp,collision))
 	vsp = 0;
 }
 y = y + vsp;
+
+
+// position check
+if array_length(oController.player_position) > 1
+{
+	if x > array_get(oController.player_position, 0) && x < array_get(oController.player_position, 1)
+		{ correct_position = true; }
+	else
+		{ correct_position = false; }
+}
 
 // flip sprite
 if _move != 0

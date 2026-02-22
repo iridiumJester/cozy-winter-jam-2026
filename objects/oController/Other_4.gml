@@ -1,13 +1,18 @@
+win_met = false;
+
 // block colors
 if level == 0
 {
 	needed_blocks = [3,2,0,0,0];
-	type_1_positions = [64-16, 64+16, 264-16, 264+16, 520-16, 520+16]
-	type_2_positions = [136-16, 136+16, 488-16, 488+16]
+	type_1_positions = [64-16, 64+16, 264-16, 264+16, 520-16, 520+16];
+	type_2_positions = [136-16, 136+16, 488-16, 488+16];
+	player_position = [344-16, 344+16];
 }
 if level == 1
 {
-	needed_blocks = [4,4,2,0,0]
+	needed_blocks = [4,4,2,0,0];
+	type_1_positions = [0];
+	type_2_positions = [0];
 }
 
 // total amount of needed blocks
@@ -18,7 +23,8 @@ for (var i = 0; i < 5; ++i)
 
 if room == rmMenu
 {
-	audio_play_sound(mscIntro, 2, true, 0.75);
+	if !audio_is_playing(mscIntro)
+	{ audio_play_sound(mscIntro, 2, true, 0.75); }
 }
 if room == rmGame 
 { 

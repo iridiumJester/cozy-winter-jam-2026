@@ -22,6 +22,9 @@ with (oBlock)
 }
 
 if _count_true == total_len
+{ correct_blocks = true; }
+
+if correct_blocks && oPlayer.correct_position
 { win_met = true; }
 
 // show_debug_message("Instances with correct_position = true: " + string(_count_true));
