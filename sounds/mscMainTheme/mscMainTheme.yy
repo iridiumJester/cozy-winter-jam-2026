@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mscMainTheme",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":64.02612,
+  "exportDir":"",
+  "name":"mscMainTheme",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":11025,
+  "soundFile":"mscMainTheme.mp3",
+  "volume":1.0,
+}

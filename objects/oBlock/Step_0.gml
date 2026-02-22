@@ -9,6 +9,7 @@ if (place_meeting(x,y+vsp,collision))
 		y = y + sign(vsp);
 	}
 	vsp = 0;
+	
 }
 
 if (place_meeting(x,y+vsp,oBlock))

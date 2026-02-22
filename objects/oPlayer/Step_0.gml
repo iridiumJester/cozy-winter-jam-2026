@@ -1,6 +1,7 @@
 // keyboard inputs
 var _move = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _jump = keyboard_check_pressed(vk_space);
+var _playing = audio_is_playing(sfxStep);
 
 hsp = _move * move_speed;
 
@@ -38,8 +39,19 @@ if (place_meeting(x,y+vsp,collision))
 y = y + vsp;
 
 // flip sprite
-if (_move != 0)
+if _move != 0
 {
-    if (_move < 0) image_xscale = 1;
+    
+	if (_move < 0) image_xscale = 1;
     else if (_move > 0) image_xscale = -1;
+	if !_playing
+	{ audio_play_sound(sfxStep, 2, true, 0.75); }
+	if carrying sprite_index = sPlayerHoldingWalk;
+	else sprite_index = sPlayerWalk;
+}
+if _move == 0
+{ 
+	audio_stop_sound(sfxStep); 
+	if carrying sprite_index = sPlayerHolding;
+	else sprite_index = sPlayer;
 }
