@@ -1,17 +1,15 @@
 {
-  "$GMSound":"v2",
+  "$GMSound":"",
   "%Name":"mscIntro",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "channelFormat":1,
+  "bitRate":128,
   "compression":3,
-  "compressionQuality":4,
   "conversionMode":0,
   "duration":8.045714,
-  "exportDir":"",
   "name":"mscIntro",
   "parent":{
     "name":"Sounds",
@@ -22,5 +20,6 @@
   "resourceVersion":"2.0",
   "sampleRate":11025,
   "soundFile":"mscIntro.mp3",
+  "type":0,
   "volume":1.0,
 }
